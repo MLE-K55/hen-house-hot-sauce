@@ -194,3 +194,20 @@ body{background-color:#f6d8d2;background-image:none}
 .contact-section{background:linear-gradient(135deg,#fae5dd,#dfa09a)}
 @media(max-width:900px){.hero-inner{justify-content:flex-start}.hero-copy{width:min(540px,92%)}}
 @media(max-width:600px){.hero-copy{width:100%;padding:0 .5rem}.hero h1,.hero .eyebrow,.hero .tagline,.hero-intro{text-shadow:0 2px 8px rgba(0,0,0,.95)}}
+
+/* Full-color Hen House logo in the header and footer */
+.brand-mark{
+  display:block;
+  width:58px;
+  height:58px;
+  flex:0 0 58px;
+  border:0;
+  border-radius:0;
+  background:none;
+  box-shadow:none;
+  object-fit:contain;
+  transform:none;
+}
+.brand-mark::after{display:none;content:none}
+.footer-brand .brand-mark{width:76px;height:76px;flex-basis:76px}
+@media(max-width:600px){.brand-mark{width:52px;height:52px;flex-basis:52px}.footer-brand .brand-mark{width:68px;height:68px;flex-basis:68px}}
